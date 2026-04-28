@@ -2,30 +2,13 @@
   "version": 2,
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "env": {
-    "VITE_API_URL": "@vite_api_url"
-  },
+  "installCommand": "npm install",
+  "framework": "vite",
   "routes": [
-    {
-      "src": "/api/(.*)",
-      "destination": "https://your-backend-api.com/api/$1",
-      "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"]
-    },
     {
       "src": "/(.*)",
       "destination": "/index.html",
       "status": 200
-    }
-  ],
-  "headers": [
-    {
-      "source": "/static/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
     }
   ]
 }
