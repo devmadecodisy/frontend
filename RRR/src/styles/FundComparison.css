@@ -1,0 +1,139 @@
+.fund-comparison {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.comparison-header {
+  margin-bottom: 2rem;
+}
+
+.comparison-header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.comparison-header p {
+  color: var(--text-color);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--text-color);
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.comparison-table {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-md);
+  overflow-x: auto;
+  margin-bottom: 2rem;
+}
+
+.table {
+  width: 100%;
+  min-width: 600px;
+}
+
+.table th {
+  background-color: var(--dark-color);
+  color: white;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid var(--border-color);
+  position: sticky;
+  top: 0;
+}
+
+.table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.metric-name {
+  font-weight: 600;
+  background-color: var(--light-color);
+  width: 200px;
+  color: var(--dark-color);
+}
+
+.metric-value {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.metric-value.positive {
+  color: #10b981;
+}
+
+.highlight-row {
+  background-color: var(--light-color);
+}
+
+.table tbody tr:hover {
+  background-color: rgba(37, 99, 235, 0.05);
+}
+
+.comparison-insights {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.comparison-insights h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.insight-item {
+  background: var(--light-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border-left: 4px solid var(--primary-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.insight-label {
+  font-size: 0.875rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.insight-value {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+@media (max-width: 768px) {
+  .fund-comparison {
+    padding: 1rem;
+  }
+
+  .table th,
+  .metric-name {
+    font-size: 0.875rem;
+    padding: 0.75rem 0.5rem;
+  }
+
+  .table td {
+    font-size: 0.875rem;
+    padding: 0.75rem 0.5rem;
+  }
+
+  .insights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

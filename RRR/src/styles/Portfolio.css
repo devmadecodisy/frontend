@@ -1,0 +1,199 @@
+.portfolio {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.portfolio-header {
+  margin-bottom: 2rem;
+}
+
+.portfolio-header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-header p {
+  color: var(--text-color);
+}
+
+.portfolio-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.summary-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  border-left: 4px solid var(--primary-color);
+}
+
+.summary-label {
+  font-size: 0.875rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.summary-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+.summary-value.positive {
+  color: #10b981;
+}
+
+.summary-value.negative {
+  color: #ef4444;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 1200px) {
+  .charts-grid {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.chart-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.chart-card h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.holdings-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.holdings-section h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.holdings-table {
+  width: 100%;
+}
+
+.holdings-table tbody tr td.positive {
+  color: #10b981;
+  font-weight: 500;
+}
+
+.holdings-table tbody tr td.negative {
+  color: #ef4444;
+  font-weight: 500;
+}
+
+.table-total {
+  background-color: var(--light-color);
+  font-weight: 600;
+  border-top: 2px solid var(--border-color);
+}
+
+.table-total td {
+  padding: 1rem;
+}
+
+/* Payment Section */
+.payment-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.payment-section h2 {
+  color: white;
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.btn-payment {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 32px;
+  background: white;
+  color: #667eea;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-payment:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-payment:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .payment-section {
+    padding: 1.5rem;
+  }
+
+  .payment-section h2 {
+    font-size: 1.25rem;
+  }
+
+  .btn-payment {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 1rem;
+  }
+
+  .portfolio-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .holdings-table {
+    font-size: 0.875rem;
+  }
+
+  .holdings-table th,
+  .holdings-table td {
+    padding: 0.75rem 0.5rem;
+  }
+}
