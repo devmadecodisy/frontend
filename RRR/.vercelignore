@@ -1,0 +1,16 @@
+node_modules
+.git
+.gitignore
+README.md
+DEPLOYMENT.md
+SETUP_GUIDE.md
+QUICK_START.md
+INSTALL_NODEJS.md
+STATUS.md
+TODO.md
+*.log
+.env.local
+.env.*.local
+ravistore-backend
+my-app
+dist
